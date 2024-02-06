@@ -17,7 +17,7 @@ function Navigation() {
       sticky="top"
     >
       <Container>
-        <Link className="nav-link" to="/">
+        <Link className="nav-link" to="/about">
         <Image
             roundedCircle
             src={brand}
@@ -29,7 +29,7 @@ function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav variant="underline" className="ms-auto" justify>
             <Nav.Item>
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/about">
                 About
               </Link>
             </Nav.Item>
