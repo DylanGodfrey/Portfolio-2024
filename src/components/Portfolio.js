@@ -1,6 +1,7 @@
 import React from "react";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
+import ButtonGroup from "react-bootstrap/ButtonGroup";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -43,7 +44,7 @@ const Portfolio = ({ projects }) => {
       <Container>
         <Stack gap={3}>
           {projects.map((project, index) => (
-            <Container fluid key={index} className="my-5">
+            <Container fluid key={index} className="my-4">
               <Row>
                 <Col xs={12} md={6} lg={4}>
                   <Ratio aspectRatio="16x9">
@@ -55,40 +56,39 @@ const Portfolio = ({ projects }) => {
                     />
                   </Ratio>
                   {project.techs.map((tech, index) => (
-                    <div
-                      key={index}
-                      className="d-flex align-items-center mr-3 mb-3"
-                    >
-                      <Col>
-                        <img
-                          key={index}
-                          src={tech.fe_icon}
-                          alt={tech.frontend}
-                          className="mr-2"
-                          style={iconStyle}
-                        />
-                        {tech.frontend}
-                      </Col>
-                      <Col>
-                        <img
-                          key={index}
-                          src={tech.be_icon}
-                          alt={tech.backend}
-                          className="mr-2"
-                          style={iconStyle}
-                        />
-                        {tech.backend}
-                      </Col>
-                      <Col>
-                        <img
-                          key={index}
-                          src={tech.css_icon}
-                          alt={tech.css}
-                          className="mr-2"
-                          style={iconStyle}
-                        />
-                        {tech.css}
-                      </Col>
+                    <div key={index} className="d-flex justify-content-center align-items-center mt-3 mb-3">
+                      <ButtonGroup>
+                        <Button size="sm" variant="light" className="p-3">
+                          <img
+                            key={index}
+                            src={tech.fe_icon}
+                            alt={tech.frontend}
+                            className="mr-2"
+                            style={iconStyle}
+                          />
+                          {tech.frontend}
+                        </Button>
+                        <Button size="sm" variant="light" className="p-3">
+                          <img
+                            key={index}
+                            src={tech.be_icon}
+                            alt={tech.backend}
+                            className="mr-2"
+                            style={iconStyle}
+                          />
+                          {tech.backend}
+                        </Button>
+                        <Button size="sm" variant="light" className="p-3">
+                          <img
+                            key={index}
+                            src={tech.css_icon}
+                            alt={tech.css}
+                            className="mr-2"
+                            style={iconStyle}
+                          />
+                          {tech.css}
+                        </Button>
+                      </ButtonGroup>
                     </div>
                   ))}
                 </Col>

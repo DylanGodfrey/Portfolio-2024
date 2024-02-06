@@ -10,6 +10,7 @@ import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
 import resume from "../assets/DylanGodfrey.pdf";
+import brand from "../assets/brand_logo.jpg";
 
 const AboutMe = () => {
   /*branding:*/
@@ -121,6 +122,9 @@ const AboutMe = () => {
             <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20 lg:pt-15">
               <h3>Technical Skills:</h3>
               <p>
+                <b>Frameworks:</b> React | Flask
+              </p>
+              <p>
                 <b>Programming Languages:</b> Javascript (Typescript) | Python |
                 C | HTML/CSS
               </p>
@@ -131,9 +135,6 @@ const AboutMe = () => {
               <p>
                 <b>Databases:</b> GraphQL | MySQL | Sequelize | SQLAlchemy |
                 MongoDB{" "}
-              </p>
-              <p>
-                <b>Frameworks:</b> React | Flask
               </p>
               <p>
                 <b>Testing Frameworks:</b> Jest | mocha
@@ -152,7 +153,7 @@ const AboutMe = () => {
           <Image
             roundedCircle
             style={style}
-            src="http://bulma.io/images/placeholders/1280x960.png"
+            src={brand}
             width="100%"
             alt=""
           />
