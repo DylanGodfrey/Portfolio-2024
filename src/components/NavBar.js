@@ -17,14 +17,14 @@ function Navigation() {
       sticky="top"
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Link className="nav-link" to="/">
         <Image
             roundedCircle
             src={brand}
             width="60px"
             alt=""
           />
-          | DG |</Navbar.Brand>
+          | DG |</Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav variant="underline" className="ms-auto" justify>
