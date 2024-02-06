@@ -10,13 +10,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/Portfolio-2024">
         <div>
           <Navigation />
           <Routes>
           <Route path="/" element={<AboutMe />} />
             <Route path="/about" element={<AboutMe />} />
-            <Route path="/Portfolio-2024" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
           </Routes>
         </div>

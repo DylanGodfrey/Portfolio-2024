@@ -17,7 +17,7 @@ function Navigation() {
       sticky="top"
     >
       <Container>
-        <Link className="nav-link" to="/about">
+        <Link className="nav-link" to="/">
         <Image
             roundedCircle
             src={brand}
